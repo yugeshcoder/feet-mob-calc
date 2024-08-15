@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feet-Calc & Billing</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="inputpage.css">
+  <link rel="stylesheet" href="checkpage.css">
+  <Link rel="stylesheet" href="billpage.css">
+</head>
+<body>
+  <section id="inputpage">
+    <div id="forflexadd">
+    <div>
+      <div id="divfor10p">
+        <div id="avgfor10info">
+          <label><b style="font-size: 1.25em;">FOR 10 P: </b></label>
+          <input id="input1" type="number">
+          <button id="s1b1"> enter </button>
+        </div>
+        <table id="avgfor10table">
+          <tr>
+            <th>7 feet</th>
+            <th>6 feet</th>
+            <th>5 feet</th>
+            <th>4 feet</th>
+            <th>3 feet</th>
+          </tr>
+          <tr>
+            <td id="7f"></td>
+            <td id="6f"></td>
+            <td id="5f"></td>
+            <td id="4f"></td>
+            <td id="3f"></td>
+          </tr>
+          <tr>
+            <td id="7p"></td>
+            <td id="6p"></td>
+            <td id="5p"></td>
+            <td id="4p"></td>
+            <td id="3p"></td>
+          </tr>
+        </table>
+      </div>
+      <div id="divfor25p">
+        <div id="avgfor25info">
+          <label><b style="font-size: 1.25em;">FOR 25 P: </b></label>
+          <input id="input2" type="number">
+          <button id="s1b2"> enter </button>
+        </div>
+        <div id="avgfor25div">
+          <table id="avgfor25table">
+            <tr>
+              <th>7 feet</th>
+              <th>6 feet</th>
+              <th>5 feet</th>
+              <th>4 feet</th>
+              <th>3 feet</th>
+              <th>2 feet</th>
+            </tr>
+            <tr>
+              <td id="7f2"></td>
+              <td id="6f2"></td>
+              <td id="5f2"></td>
+              <td id="4f2"></td>
+              <td id="3f2"></td>
+              <td id="2f2"></td>
+            </tr>
+            <tr>
+              <td id="7p2"></td>
+              <td id="6p2"></td>
+              <td id="5p2"></td>
+              <td id="4p2"></td>
+              <td id="3p2"></td>
+              <td id="2p2"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="inputdqmn">
+      <div class="DQ">
+        <label id="labeldate" for="date">Date:<input id="date" type="date"></label>
+        <div class="divforq">
+          <label id="labelq" for="q">Q: 
+          <select id="q">
+            <option >&#8545;</option>
+            <option>&#x2160;</option>
+          </select></label>
+        </div>
+      </div>
+      <div class="MN">
+        <div class="modeldiv">
+          <label id="label1">Model:
+            <input id ="mod" list="model" name="mymodel"/>
+          </label>
+            <datalist id="model">
+              <option value="1/2 * 1/2">
+              <option value="1*6">
+              <option value="35*10">
+              <option value="45*10">
+              <option value="35*6">
+              <option value="45*6">
+              <option value="AB 12*12">
+              <option value="AB 18*18">
+              <option value="AB 25*25">
+              <option value="AB 35*35">
+              <option value="AE 30*10">
+              <option value="AE 22*10">
+            </datalist>
+        </div>
+          <div class="namediv">
+            <label id="label2">Name:
+            <input id="nam" list="name" name="customername" /></label>
+            <datalist id="name">
+              <option value="T Bai">
+              <option value="P Bai">
+              <option value="mama">
+              <option value="V.D Timber">
+              <option value="Surender">
+              <option value="Vikram">
+              <option value="V Bai">
+              <option value="D Bai">
+            </datalist>
+          </div>
+      </div>
+    </div>
+      <div id="showtotaldiv">
+        <button id="10p">10p</button>
+        <h1 id="showtotal">WELCOME</h1>
+        <button id="25p">25p</button>
+      </div>
+      <div id="tableheader">
+        <table>
+          <tr>
+            <th>FEET</th>
+            <th>INPUT</th>
+            <th>CHECK</th>
+          </tr>
+        </table>
+      </div>
+      <div id="inputtablediv">
+        <table id="inputtable">
+          <tr id="r26">
+            <td id="f26">9.0</td>
+            <td id="i26">
+              <input type="number" id="n26">
+            </td>
+            <td class="check" id="c26"></td>
+          </tr>
+          <tr id="r27">
+            <td id="f27">8.9</td>
+            <td id="i27">
+              <input type="number" id="n27">
+            </td>
+            <td class="check" id="c27"></td>
+          </tr>
+          <tr id="r28">
+            <td id="f28">8.6</td>
+            <td id="i28">
+              <input type="number" id="n28">
+            </td>
+            <td class="check" id="c28"></td>
+          </tr>
+          <tr id="r29">
+            <td id="f29">8.3</td>
+            <td id="i29">
+              <input type="number" id="n29">
+            </td>
+            <td class="check" id="c29"></td>
+          </tr>
+          
+          <tr id="r1">
+            <td id="f1">8.0</td>
+            <td id="i1">
+              <input type="number" id="n1">
+            </td>
+            <td class="check" id="c1"></td>
+          </tr>
+          <tr id="r2">
+            <td id="f2">7.9</td>
+            <td id="i2">
+              <input type="number" id="n2">
+            </td>
+            <td class="check" id="c2"></td>
+          </tr>
+          <tr id="r3">
+            <td id="f3">7.6</td>
+            <td id="i3">
+              <input type="number" id="n3">
+            </td>
+            <td class="check" id="c3"></td>
+          </tr>
+          <tr id="r4">
+            <td id="f4">7.3</td>
+            <td id="i4">
+              <input type="number" id="n4">
+            </td>
+            <td class="check" id="c4"></td>
+          </tr>
+          <tr id="r5">
+            <td id="f5">7.0</td>
+            <td id="i5">
+              <input type="number" id="n5">
+            </td>
+            <td class="check" id="c5"></td>
+          </tr>
+          <tr id="r6">
+            <td id="f6">6.9</td>
+            <td id="i6">
+              <input type="number" id="n6">
+            </td>
+            <td class="check" id="c6"></td>
+          </tr>
+          <tr id="r7">
+            <td id="f7">6.6</td>
+            <td id="i7">
+              <input type="number" id="n7">
+            </td>
+            <td class="check" id="c7"></td>
+          </tr>
+          <tr id="r8">
+            <td id="f8">6.3</td>
+            <td id="i8">
+              <input type="number" id="n8">
+            </td>
+            <td class="check" id="c8"></td>
+          </tr>
+          <tr id="r9">
+            <td id="f9">6.0</td>
+            <td id="i9">
+              <input type="number" id="n9">
+            </td>
+            <td class="check" id="c9"></td>
+          </tr>
+          <tr id="r10">
+            <td id="f10">5.9</td>
+            <td id="i10">
+              <input type="number" id="n10">
+            </td>
+            <td class="check" id="c10"></td>
+          </tr>
+          <tr id="r11">
+            <td id="f11">5.6</td>
+            <td id="i11">
+              <input type="number" id="n11">
+            </td>
+            <td class="check" id="c11"></td>
+          </tr>
+          <tr id="r12">
+            <td id="f12">5.3</td>
+            <td id="i12">
+              <input type="number" id="n12">
+            </td>
+            <td class="check" id="c12"></td>
+          </tr>
+          <tr id="r13">
+            <td id="f13">5.0</td>
+            <td id="i13">
+              <input type="number" id="n13">
+            </td>
+            <td class="check" id="c13"></td>
+          </tr>
+          <tr id="r14">
+            <td id="f14">4.9</td>
+            <td id="i14">
+              <input type="number" id="n14">
+            </td>
+            <td class="check" id="c14"></td>
+          </tr>
+          <tr id="r15">
+            <td id="f15">4.6</td>
+            <td id="i15">
+              <input type="number" id="n15">
+            </td>
+            <td class="check" id="c15"></td>
+          </tr>
+          <tr id="r16">
+            <td id="f16">4.3</td>
+            <td id="i16">
+              <input type="number" id="n16">
+            </td>
+            <td class="check" id="c16"></td>
+          </tr>
+          <tr id="r17">
+            <td id="f17">4.0</td>
+            <td id="i17">
+              <input type="number" id="n17">
+            </td>
+            <td class="check" id="c17"></td>
+          </tr> 
+          <tr id="r18">
+            <td id="f18">3.9</td>
+            <td id="i18">
+              <input type="number" id="n18">
+            </td>
+            <td class="check" id="c18"></td>
+          </tr>
+          <tr id="r19">
+            <td id="f19">3.6</td>
+            <td id="i19">
+              <input type="number" id="n19">
+            </td>
+            <td class="check" id="c19"></td>
+          </tr>
+          <tr id="r20">
+            <td id="f20">3.3</td>
+            <td id="i20">
+              <input type="number" id="n20">
+            </td>
+            <td class="check" id="c20"></td>
+          </tr>
+          <tr id="r21">
+            <td id="f21">3.0</td>
+            <td id="i21">
+              <input type="number" id="n21">
+            </td>
+            <td class="check" id="c21"></td>
+          </tr>
+          <tr id="r22">
+            <td id="f22">2.9</td>
+            <td id="i22">
+              <input type="number" id="n22">
+            </td>
+            <td class="check" id="c22"></td>
+          </tr>
+          <tr id="r23">
+            <td id="f23">2.6</td>
+            <td id="i23">
+              <input type="number" id="n23">
+            </td>
+            <td class="check" id="c23"></td>
+          </tr>
+          <tr id="r24">
+            <td id="f24">2.3</td>
+            <td id="i24">
+              <input type="number" id="n24">
+            </td>
+            <td class="check" id="c24"></td>
+          </tr>
+          <tr id="r25">
+            <td id="f25">2.0</td>
+            <td id="i25">
+              <input type="number" id="n25">
+            </td>
+            <td class="check" id="c25"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="navbtndiv">
+        <div id="inputzl">
+          <a href="outputpage.html">&larr;</a>
+        </div>
+        <button id="inputpageplus" style="font-size: 2rem;">
+          <i style="font-size:24px" class="fa">&#xf067;</i></button>
+          <div id="inputzr">
+            <a href="billpage.html">&rarr;</a>
+          </div>
+      </div>
+    </div>
+
+    <div id="enterbtndiv">
+      <button id = "enterbtn">A<br>D<br>D</button>
+    </div>
+  </div>
+    <div>
+      <button id ="check"> touch me</button>
+    </div>
+    </section> 
+    <script src="index.js"></script>
+</body>
+</html>

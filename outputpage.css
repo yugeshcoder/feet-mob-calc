@@ -1,0 +1,98 @@
+#outputpage{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: lightblue;
+  left: -360px;
+}
+#outputmod{
+  width: 130px;
+}
+
+#outputnam{
+  width: 130px;
+  margin-left: 4px;
+}
+#outputtablediv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  text-align: center;
+  margin-left: 9px;
+  margin-bottom: 50px;
+}
+#outputtable{
+  width: 280px;
+  border-collapse: collapse;
+}
+#outputtable th,td{
+  border: 1px solid black;
+  padding: 10px;
+  font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.oshowtotal{
+  display: block;
+}
+
+.outputnav{
+  margin-bottom: 30px;
+}
+
+#outputpagescreenshot{
+  padding: 5px;
+  height: 40px;
+}
+
+.outputnav{
+  position: fixed;
+  bottom: 10px;
+  width: 289px;
+  display: flex;
+  justify-content: space-around;
+  background-color: lightblue;
+  border-radius: 20px;
+}
+#mix{
+  display: flex;
+  justify-content: center;
+}
+#mix button,#mix a{
+  padding: 0 100px;
+}
+#remove{
+  position: absolute;
+  background-color: lightblue;
+  border-radius: 20px;
+}
+#remove button{
+  height: 40px;
+}
+#screenshot{
+  position: absolute;
+  z-index: -1;
+  background-color: lightblue;
+  border-radius: 20px;
+}
+#resize{
+  position: absolute;
+  z-index: -2;
+  background-color: lightblue;
+  border-radius: 20px;
+}
+#resize button{
+  height: 40px;
+  width: 269px;
+}
+#homepage{
+  position: absolute;
+  z-index: -3;
+  background-color: lightblue;
+  border-radius: 20px;
+}
+#homepage a{
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}

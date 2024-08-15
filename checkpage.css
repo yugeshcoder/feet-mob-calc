@@ -1,0 +1,44 @@
+
+#divfor10p{
+  width: 290px;
+  background-color: hsl(19, 58%, 35%);
+  position: absolute;
+  height: 118px;
+  z-index: -1;
+}
+
+#divfor10p input,#divfor25p input{
+  background-color: hsl(19, 58%, 35%);
+  border: 1px solid;
+}
+
+#divfor10p button,#divfor25p button{
+  background-color: hsla(231, 95%, 50%, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+#avgfor10table,#avgfor25table{
+  border-collapse: collapse;
+}
+#avgfor10table td,#avgfor25table td{
+  height: 26px;
+
+}
+
+#divfor25p{
+  width: 290px;
+  background-color: hsl(19, 58%, 35%);
+  position: absolute;
+  height: 118px;
+  z-index: -2;
+}
+
+
+
+
+
+
+
+

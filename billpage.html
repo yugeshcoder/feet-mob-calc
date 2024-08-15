@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="inputpage.css">
+  <link rel="stylesheet" href="billpage.css">
+</head>
+<body>
+  <section id="billpage">
+    <div id="billscreenshot">
+      <div id="billdatediv">
+        <h3 id="billdate"></h3>
+      </div>
+      <div id="billnamediv">
+        <h2 id="billname"></h2>
+      </div>
+      <div id="billtag">
+        <h3>BILL</h3>
+      </div>
+      <div id="billtablediv">
+        <table id="billtable">
+          <tr>
+            <th>Qlt</th>
+            <th>Model</th>
+            <th>Total-feet</th>
+            <th>Price/<sub>feet</sub></th>
+            <th>Amount</th>
+          </tr>
+        </table>
+      </div>
+      <div id="billtotaldiv">
+        <h1 id="billtotal"></h1>
+      </div>
+    </div>
+    <div class="navbtndiv billnavdiv">
+      <div id="navmix">
+        <div id ="bss">
+          <button id="billpagescreenshot">Screenshot</button>
+        </div>
+        <div id="bs">
+          <button id="billpagesubmit">Submit</button>
+        </div>
+      </div>
+    </div>
+</section>
+
+<script src="billpage.js"></script>
+<script src="html2canvas.js"></script>
+</body>
+</html>
