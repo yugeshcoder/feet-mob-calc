@@ -1,0 +1,29 @@
+body{
+  margin: 0;
+}
+header{
+  display: flex;
+  justify-content: center;
+  background-color: hsla(195, 53%, 79%, 0.507);
+}
+
+main{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+section{
+  width: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+#check{
+  display: block;
+  background-color: green;
+  width: 360px;
+  padding: 20px;
+  border-radius: 50px;
+  font-size: 1.5rem;
+}
