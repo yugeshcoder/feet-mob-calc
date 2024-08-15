@@ -31,6 +31,8 @@
 #billtable input{
   background-color: lightblue;
   text-align: center;
+  font-weight: 400;
+  font-size: medium;
 }
 
 
