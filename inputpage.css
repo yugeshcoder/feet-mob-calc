@@ -10,6 +10,12 @@
   width: 130px;
   margin-left: 4px;
 }
+
+#end{
+  background-color: red;
+  border-radius: 50px;
+  color: white;
+}
 #tableheader{
   display: flex;
   justify-content: center;
@@ -115,6 +121,7 @@ input[type="number"]{
   position: relative;
   top:177px;
   right:0px;
+  height: 420px;
 }
 
 #enterbtn{

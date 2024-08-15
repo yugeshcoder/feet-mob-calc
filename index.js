@@ -144,7 +144,6 @@ document.getElementById("inputpageplus").onclick = function check(){
 
   sessionStorage.setItem("showtotal",showtotal); 
   document.getElementById("inputzl").style.zIndex = 1;
-  document.getElementById("inputzr").style.zIndex = 1;
 }
 
 
@@ -447,6 +446,10 @@ document.getElementById("10p").onclick = function(){
     piece10 = "flase";
   }
 };
+
+document.getElementById("end").onclick = function(){
+  document.getElementById("inputzr").style.zIndex = 1;
+}
 
 let piece25 = "flase";
 document.getElementById("25p").onclick = function(){
