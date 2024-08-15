@@ -89,6 +89,7 @@
   z-index: -3;
   background-color: lightblue;
   border-radius: 20px;
+  padding: 0 20px;
 }
 #homepage a{
   display: block;
