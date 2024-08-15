@@ -142,8 +142,8 @@ document.getElementById("inputpageplus").onclick = function check(){
  sessionStorage.setItem("p29",p29);
  sessionStorage.setItem("t29",t29);
 
-  sessionStorage.setItem("showtotal",showtotal); 
-  document.getElementById("inputzl").style.zIndex = 1;
+  sessionStorage.setItem("showtotal",showtotal);
+  window.location.href="outputpage.html"; 
 }
 
 
@@ -448,7 +448,7 @@ document.getElementById("10p").onclick = function(){
 };
 
 document.getElementById("end").onclick = function(){
-  document.getElementById("inputzr").style.zIndex = 1;
+  window.location.href="billpage.html";
 }
 
 let piece25 = "flase";

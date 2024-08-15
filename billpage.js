@@ -10,7 +10,7 @@ let i = Number(sessionStorage.getItem("ti"));
   let x = "tm1",y = "ttf1",z = "bi1",w = "bt1",t="tq1";
   
  
-  for(let j = 2; j < i; j++){
+  for(let j = 2; j <= i; j++){
   var table = document.getElementById("billtable");
   var row = table.insertRow(1);
   row.innerHTML = `
@@ -44,18 +44,20 @@ document.getElementById("billpagesubmit").onclick = function(){
   let j = 1;
   let total = 0;
 
+  // console.log((Number(document.getElementById(y).textContent)));
+  // console.log((Number(document.getElementById(z).value)));
+  for(let k = 1; k < i; k++){
   console.log((Number(document.getElementById(y).textContent)));
   console.log((Number(document.getElementById(z).value)));
-  for(let k = 2; k < i; k++){
     let sum =((Number(document.getElementById(y).textContent)) *
              (Number(document.getElementById(z).value)));
-             sum = Math.trunc(sum);
+             sum=Math.round(sum);
         document.getElementById(w).textContent = sum;     
         total += sum;
         j++;
-        y = "bpi" + j;
+        y = "ttf" + j;
         z = "bi" + j;
-        w = "bp" + j;
+        w = "bt" + j;
   }
   total = Math.trunc(total);
   document.getElementById("billtotal").textContent = `Total-Amount : ₹${total}`;
