@@ -22,7 +22,6 @@ for(let i = 1; i <= 29; i++){
 
 let showtotal = sessionStorage.getItem("showtotal");
 document.getElementById("oshowtotal").textContent = `Total:${showtotal}`;
-
 document.getElementById("outputpageresize").onclick = function(){
 
   document.getElementById("outputtable").innerHTML = `
@@ -196,13 +195,13 @@ document.getElementById("outputpagereduce").onclick = function(){
 }
 
 const btn = document.querySelector('.screenshot');
-
+let rn = Math.floor((Math.random() * 1000000000) + 1);
 outputpagescreenshot.addEventListener('click', () => {
   html2canvas(document.querySelector('#screenshotinfo'))
     .then(canvas => {
       const url = canvas.toDataURL('image/png');
       const a = document.createElement('a');
-      a.setAttribute('download','imageName.png');
+      a.setAttribute('download','imageName.png${rn}');
       a.setAttribute('href',url);
       a.click();
     })
