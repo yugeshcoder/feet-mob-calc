@@ -27,13 +27,13 @@ let i = Number(sessionStorage.getItem("ti"));
   }
 
   const billbtn = document.querySelector('.billscreenshot');
-
+let rn = Math.floor((Math.random() * 1000000000) + 1);
 billpagescreenshot.addEventListener('click', () => {
   html2canvas(document.querySelector('#billscreenshot'))
     .then(canvas => {
       const url = canvas.toDataURL('image/png');
       const a = document.createElement('a');
-      a.setAttribute('download','imageName.png');
+      a.setAttribute('download','imageName.png${rn}');
       a.setAttribute('href',url);
       a.click();
     })
