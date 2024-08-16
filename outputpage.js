@@ -195,13 +195,14 @@ document.getElementById("outputpagereduce").onclick = function(){
 }
 
 const btn = document.querySelector('.screenshot');
-let rn = Math.floor((Math.random() * 1000000000) + 1);
+let i = Number(sessionStorage.getItem("ti"));
+let rn = nam +"-"+ i + "-"+date;
 outputpagescreenshot.addEventListener('click', () => {
   html2canvas(document.querySelector('#screenshotinfo'))
     .then(canvas => {
       const url = canvas.toDataURL('image/png');
       const a = document.createElement('a');
-      a.setAttribute('download',`imageName.png${rn}`);
+      a.setAttribute('download',`${rn}`);
       a.setAttribute('href',url);
       a.click();
     })
